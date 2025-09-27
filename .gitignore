@@ -1,0 +1,50 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# مجازی‌سازی (venv)
+.venv/
+env/
+venv/
+ENV/
+
+# لاگ‌ها و خروجی‌ها
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+
+# پوشه‌های تست
+.coverage
+.tox/
+.nox/
+.pytest_cache/
+
+# =========================
+# PyCharm / IntelliJ IDEA
+# =========================
+.idea/
+*.iml
+
+# =========================
+# سیستم‌عامل‌ها
+# =========================
+# ویندوز
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# مک
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# لینوکس
+*~
