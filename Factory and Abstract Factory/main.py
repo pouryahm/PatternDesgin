@@ -22,7 +22,9 @@ class SytemPlayer(PlayerBase):
 
 
 class Game:
-    def start_game(self, game_type):
+    @staticmethod
+    def start_game():
+        game_type = input('select game type ( "S" for single player "M" for multiplayer )')
         if game_type == 's':
             p1 = HumanPlayer()
             p2 = SytemPlayer()
@@ -38,5 +40,7 @@ class Game:
 
 if __name__ == "__main__":
     game = Game()
-    game_type = input('select game type ( "S" for single player "M" for multiplayer )')
-    game.start_game(game_type)
+    player_1, player_2 = Game.start_game()
+
+    for player in [player_1, player_2]:
+        player.move()
