@@ -50,7 +50,7 @@ class GiftCardShipping(DetailBase):
 
 
 class GiftCard(ProductBase):
-    def __init__(self, company, min_price, max_price,shipping_method):
+    def __init__(self, company, min_price, max_price, shipping_method):
         self.company = company
         self.min_price = min_price
         self.max_price = max_price
@@ -116,6 +116,7 @@ class Rugs(ProductBase):
 if __name__ == "__main__":
     r1 = Rugs("persian rug", 150, "plane")
     r2 = Rugs("ghom rug", 170, "car")
+
     g1 = GiftCard("Google", 20, 60, "bike")
     # g2 = Giftcard()
     #
