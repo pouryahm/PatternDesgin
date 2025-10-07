@@ -19,12 +19,12 @@ class TempConvertor:
     def convert(self):
         f_temp = self.data.call_Temp()
         new_cels = (f_temp - 32) * (5 / 9)
-        return f"new temp convert to {new_cels : .2f} C "
+        return round(new_cels, 2)
 
 
 if __name__ == '__main__':
     f1 = Fahrenheit()
     adaptor = TempConvertor(f1)
-    c1=Celsius(adaptor)
+    c1 = Celsius(adaptor.convert())
 
     print(c1.show_temp())
